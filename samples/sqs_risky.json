@@ -1,0 +1,11 @@
+{
+  "queues": [
+    {
+      "QueueName": "payment-webhooks-prod",
+      "handler_timeout_seconds": 60,
+      "Attributes": {
+        "VisibilityTimeout": 30
+      }
+    }
+  ]
+}

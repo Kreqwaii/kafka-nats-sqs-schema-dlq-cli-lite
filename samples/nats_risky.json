@@ -1,0 +1,12 @@
+{
+  "streams": [
+    {
+      "config": {
+        "name": "TELEMETRY_INGEST",
+        "subjects": ["telemetry.>"],
+        "max_bytes": -1,
+        "max_age": 0
+      }
+    }
+  ]
+}

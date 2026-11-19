@@ -1,0 +1,20 @@
+{
+  "topics": [
+    {
+      "name": "orders.events.v1",
+      "environment": "prod",
+      "replication_factor": 2,
+      "configs": {
+        "min.insync.replicas": 1,
+        "retention.ms": -1,
+        "cleanup.policy": "delete"
+      }
+    }
+  ],
+  "consumers": [
+    {
+      "group_id": "billing-worker-prod",
+      "auto.offset.reset": "latest"
+    }
+  ]
+}
